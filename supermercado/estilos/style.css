@@ -1,0 +1,66 @@
+:root {
+  --primary-color:rgb(228, 219, 234);
+  --secondary-color:rgb(145, 90, 189);
+  --accent-color:rgb(108, 93, 123);
+  --background-color:rgb(179, 161, 197);
+  --text-color:rgb(63, 3, 75);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container {
+  background-color: white;
+  background-color: var(--background-color);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+input, button {
+  width: 40%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.resultado {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  text-align: center;
+}
